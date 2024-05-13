@@ -52,7 +52,7 @@ export class SimplePayClient {
         });
     }
 }
-const sp = new SimplePayClient('c2ee7172-8295-4ce1-8a5c-cbf311c3ad8e', 'f0b135de-a9e1-41b1-a6e1-5413e78a3e3b');
+// const sp = new SimplePayClient('c2ee7172-8295-4ce1-8a5c-cbf311c3ad8e', 'f0b135de-a9e1-41b1-a6e1-5413e78a3e3b')
 // sp.getInvoice('6fdd167f-2878-4cc8-9565-5ae2d0dc9318').then((data) => {
 //     console.log('Parsed invoice: ')
 //     console.log(data)
@@ -61,9 +61,9 @@ const sp = new SimplePayClient('c2ee7172-8295-4ce1-8a5c-cbf311c3ad8e', 'f0b135de
 //     console.log('Parsed transaction data: ')
 //     console.log(data)
 // })
-sp.getInvoices({ address: 'TEqx4nScnTTjMucmtrq6N5w1Rvt4oYfCnz' }).then((data) => console.log('Parsed invoices history:', data));
-sp.subscribe('InvoiceIssued', (data) => {
-    console.log("EVENT TRIGGERED!");
-    console.log(data);
-});
+// sp.getInvoices({address: 'TEqx4nScnTTjMucmtrq6N5w1Rvt4oYfCnz'}).then((data) => console.log('Parsed invoices history:' , data))
+// sp.subscribe('InvoiceIssued', (data: any) => {
+//     console.log("EVENT TRIGGERED!")
+//     console.log(data)
+// })
 //# sourceMappingURL=index.js.map

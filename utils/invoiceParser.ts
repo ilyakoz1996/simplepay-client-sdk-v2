@@ -49,6 +49,6 @@ export const readInvoiceData = (
       to: bytesToString(invoice.to),
       status: typeof invoice.status === 'bigint' ? parseStatus(Number(invoice.status)) : invoice.status,
       clientId: invoice.clientEmail,
-      transactionId: invoice.transactionId !== nullableValue ? invoice.transactionId : null
+      transactionId: invoice.transactionId !== nullableValue ? invoice.transactionId.slice(2) : null
     };
   };
